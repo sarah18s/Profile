@@ -1,0 +1,118 @@
+* {
+    font-family: "Agbalumo" , sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 370px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0 , 0 ,0 , 0.1);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+} 
+.image {
+    position: relative;
+    
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 5px;
+    margin: 15px;
+}
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border : 5px solid white ;
+}
+.profile-card .text-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.text-data .name {
+   font-size: 20px;
+}
+
+
+
+
+.profile-card .media {
+    display: flex;
+    align-items: center;
+   margin-top: 15px;
+   
+
+}
+
+.media .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color:#4070f4 ;
+    color : #fff;
+    font-size: 18px;
+    margin: 0 8px;
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+
+}
+
+.profile-card .buttons{
+    display: flex;
+    margin-top: 15px;
+   
+}
+
+
+.buttons .button{
+    border-radius: 25px;
+    background-color: #4070f4;
+    color: #fff;
+    padding: 8px 24px;
+    width: 150px;
+    margin:  0 10px;
+   cursor: pointer;
+   border : 0;
+   
+}
+
+.buttons .button:hover {
+    background-color:#0e4bf1 ;
+}
+.back {
+    background-color: #0e4bf1;
+    width: 100%;
+}
+
+.profile-card::before {
+  background-color: #4070f4;
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px;
+    }
